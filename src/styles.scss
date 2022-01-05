@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("~bootstrap/dist/css/bootstrap.min.css");
+@import url("~bootstrap-icons/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap");
+ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Livvic", sans-serif;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.pb-120 {
+    padding-bottom: 120px;
+}
+.pt-120 {
+    padding-top: 120px;
+}
