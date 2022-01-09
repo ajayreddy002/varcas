@@ -1,85 +1,67 @@
 .top-nav {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    .contact-part {
-        li {
-            display: inline-block;
-            padding-right: 25px;
-            padding-left: 25px;
-            border-right: 1px solid #eee;
-            font-size: 14px;
-            em {
-                float: left;
-                margin-right: 15px;
-                line-height: 38px;
-                font-size: 26px;
-                color: #106eea;
-            }
-            .contact-info {
-                float: left;
-                text-align: left;
-                display: block;
-                span {
-                    color: #0a0a0a;
-                    display: block;
-                    text-align: left;
-                    font-size: 15px;
-                    padding: 0;
-                    font-weight: 600;
-                    line-height: 1;
-                    margin-bottom: 0;
-                }
-            }
-        }
-    }
-}
-.nav-block {
-    transition: all 0.3s ease;
-    background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
-    .navbar {
-        padding: 0 !important;
-    }
-    .main-menu {
-        align-items: center;
-        justify-content: flex-end;
+  padding-top: 20px;
+  padding-bottom: 10px;
+
+  .contact-part {
+    li {
+      display: inline-block;
+      padding-right: 25px;
+      padding-left: 25px;
+      border-right: 1px solid #eee;
+      font-size: 14px;
+
+      em {
         float: left;
-        .blue-menu {
-            float: left;
-            clear: both;
-            width: 100%;
-            font-size: 0;
-            .nav-menu {
-                li {
-                    display: inline-block;
-                    a {
-                        transition: all 0.3s ease;
-                        font-size: 15px;
-                        font-weight: 600;
-                        margin-right: 10px;
-                        height: 65px;
-                        line-height: 65px;
-                        padding: 0;
-                        color: #fff;
-                        position: relative;
-                        font-family: Livvic;
-                        &:hover {
-                            color: #bbb;
-                        }
-                    }
-                }
-                i {
-                    border: 0;
-                    margin: 0;
-                    padding: 0;
-                }
-            }
+        margin-right: 15px;
+        line-height: 38px;
+        font-size: 26px;
+        color: #106eea;
+      }
+
+      .contact-info {
+        float: left;
+        text-align: left;
+        display: block;
+
+        span {
+          color: #0a0a0a;
+          display: block;
+          text-align: left;
+          font-size: 15px;
+          padding: 0;
+          font-weight: 600;
+          line-height: 1;
+          margin-bottom: 0;
         }
+      }
     }
-    .nav-item {
-        display: inline-block;
-        margin-right: 52px;
-        padding: 0;
-        a {
+  }
+}
+
+.nav-block {
+  transition: all 0.3s ease;
+  background-image: linear-gradient(90deg, #03228f 10%, #0e73e4 100%);
+
+  .navbar {
+    padding: 0 !important;
+  }
+
+  .main-menu {
+    align-items: center;
+    justify-content: flex-end;
+    float: left;
+
+    .blue-menu {
+      float: left;
+      clear: both;
+      width: 100%;
+      font-size: 0;
+
+      .nav-menu {
+        li {
+          display: inline-block;
+
+          a {
             transition: all 0.3s ease;
             font-size: 15px;
             font-weight: 600;
@@ -90,44 +72,101 @@
             color: #fff;
             position: relative;
             font-family: Livvic;
+
             &:hover {
-                color: #bbb;
+              color: #bbb;
             }
+          }
         }
+
+        i {
+          border: 0;
+          margin: 0;
+          padding: 0;
+        }
+      }
     }
+  }
+
+  .nav-item {
+    display: inline-block;
+    margin-right: 52px;
+    padding: 0;
+
+    a {
+      transition: all 0.3s ease;
+      font-size: 15px;
+      font-weight: 600;
+      margin-right: 10px;
+      height: 65px;
+      line-height: 65px;
+      padding: 0;
+      color: #fff;
+      position: relative;
+      font-family: Livvic;
+
+      &:hover {
+        color: #bbb;
+      }
+    }
+  }
 }
 
 .dropdown {
-    .dropdown-menu {
-        background: #fff;
+  .dropdown-menu {
+    background: #fff;
+    margin: 0;
+    padding: 20px 0;
+    border-radius: 0 0 5px 5px;
+
+    li {
+      margin: 0 !important;
+      border: 0;
+
+      a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 40px;
+        padding-right: 40px;
         margin: 0;
-        padding: 20px 0;
-        border-radius: 0 0 5px 5px;
-        li {
-            margin: 0 !important;
-            border: 0;
-            a {
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-left: 40px;
-                padding-right: 40px;
-                margin: 0;
-                font-size: 14px;
-                font-weight: 500;
-                color: #101010;
-                height: unset;
-                line-height: 16px;
-                transition: all .3s ease;
-                &:hover {
-                    color: #106eea;
-                    background: transparent;
-                }
-            }
+        font-size: 14px;
+        font-weight: 500;
+        color: #101010;
+        height: unset;
+        line-height: 16px;
+        transition: all .3s ease;
+
+        &:hover {
+          color: #106eea;
+          background: transparent;
         }
+      }
     }
-    &:hover {
-        .dropdown-menu {
-            display: block;
-        }
+  }
+
+  &:hover {
+    .dropdown-menu {
+      display: block;
     }
+  }
+}
+
+
+.secondToolbar {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  height: 0;
+  opacity: 0;
+  transition: opacity .50s ease-out, height .15s ease;
+  cursor: default;
+  user-select: none;
+}
+
+.sticky {
+  width: 100%;
+  height: 64px;
+  opacity: 1;
+  transition: opacity .50s ease-out, height .15s ease;
+  z-index: 99;
 }

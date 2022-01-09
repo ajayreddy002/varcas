@@ -33,6 +33,68 @@
             </div>
         </div>
     </div>
+
+    <!-- Sticky Header View -->
+    <div class="secondToolbar" [ngClass]="{'sticky' : isSticky}"> 
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="flex01">
+                    <a href="">VARCAS</a>
+                </div>
+                <div class="flex01">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mb-2 mb-lg-0 flex01 justify-content-between">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" routerLink="/about">About</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Software Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Analytic Solutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Cloud and DevOps</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Center</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Corporate Training
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Software Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Web Development</a></li>
+                                    <li><a class="dropdown-item" href="#">Analytic Solutions</a></li>
+                                    <li><a class="dropdown-item" href="#">Cloud and DevOps</a></li>
+                                    <li><a class="dropdown-item" href="#">Product Design</a></li>
+                                    <li><a class="dropdown-item" href="#">Data Center</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Defailt Header View -->
     <div class="nav-block">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
@@ -86,3 +148,4 @@
         </nav>
     </div>
 </div>
+
