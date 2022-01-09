@@ -1,0 +1,141 @@
+.about-block {
+    background-color: #f6f7f9;
+    .ab-txt {
+        position: relative;
+        .sub-txt {
+            position: relative;
+            padding-left: 95px;
+            display: inline-block;
+            line-height: 28px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: #03228f;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            &:before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 12px;
+                height: 4px;
+                width: 12px;
+                background-color: #fd6509;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                border: 0;
+                height: 4px;
+                width: 50px;
+                background-color: #fd6509;
+                z-index: 1;
+                margin-left: 0;
+                left: 24px;
+                top: 12px;
+            }
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 46px;
+            color: #101010;
+            margin: 0;
+        }
+    }
+    .ab-services {
+        padding: 50px 28px 50px 28px;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0 0 50px 11px rgba(92, 138, 245, 0.05);
+        position: relative;
+        text-align: left;
+        .service-item {
+            padding: 50px 36px 50px 36px;
+            background-color: #fff;
+            border-radius: 10px 10px 10px 10px;
+            box-shadow: 0 0 50px 11px rgb(95 138 236 / 5%);
+            position: relative;
+            text-align: left;
+            &:hover {
+                background-color: #fd660a;
+                .m-img {
+                    transform: scale(0);
+                }
+                .h-img {
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                    transform: scale(1) !important;
+                }
+                .s-content .s-title {
+                    h3 a {
+                        color: #fff;
+                    }
+                }
+                .description {
+                    color: #fff;
+                }
+                &.b-bg{
+                    background: #14d2f5 !important;
+                }
+                &.y-bg{
+                    background: #f5be18 !important;
+                }
+                &.db-bg{
+                    background: #2c44e4 !important;
+                }
+            }
+            .s-icon {
+                position: relative;
+                transition: all 0.3s ease;
+                .s-img-block {
+                    .m-img {
+                        height: 70px;
+                        width: 70px;
+                    }
+                    .h-img {
+                        height: 70px;
+                        width: 70px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        visibility: hidden;
+                        opacity: 0;
+                        transform: scale(0);
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            .s-content {
+                padding: 33px 0 0 0;
+                position: relative;
+                .s-title {
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        line-height: 30px;
+                        margin-bottom: 13px;
+                        a {
+                            color: #1c1b1b;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .ab-txt{
+        h2{
+            font-size: 20px !important;
+            line-height: 30px !important;
+        }
+    }
+    .ab-services{
+        margin-top: 1.5rem !important;
+        padding-top: 0 !important;
+    }
+    .ab-txt{
+        padding: 25px 10px;
+    }
+}
