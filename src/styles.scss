@@ -20,6 +20,25 @@ img {
 .pt-120 {
     padding-top: 120px;
 }
+
+.flex01 {
+    flex: 1;
+}
+
+.row-b {
+    display: flex;
+}
+
+.row-vrt-c {
+    display: flex;
+    align-items: center;
+}
+
+.row-spb {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .description {
     font-size: 18px;
     font-weight: 400;
