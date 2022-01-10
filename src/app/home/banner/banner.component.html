@@ -32,27 +32,15 @@
             <div class="heading-line"></div>
         </div>
         <div class="testi-data">
-            <!-- <owl-carousel-o [options]="customOptions"> -->
-                <ul class="testi-model" *ngFor="let item of testiData">
-                    <li carouselSlide [id]="item.id">
-                        <img src="../../../assets/images/{{item.img}}" alt="">
-                        <p>{{item.text}}</p>
-                        <div class="author-img">
-                            <img>
-                        </div>
-                    </li>
-                </ul>
-            <!-- </owl-carousel-o> -->
+            <ul class="testi-model" *ngFor="let item of testiData">
+                <li carouselSlide [id]="item.id">
+                    <img src="../../../assets/images/{{item.img}}" alt="">
+                    <p>{{item.text}}</p>
+                    <div class="author-img">
+                        <img>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
-
-<!-- <owl-carousel-o [options]="customOptions">
-   
-    <ng-container *ngFor="let slide of slides">
-      <ng-template carouselSlide [id]="slide.id">
-        <img [src]="slide.img" >
-      </ng-template>
-    </ng-container>
-       
-    </owl-carousel-o> -->
