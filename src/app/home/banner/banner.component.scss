@@ -233,3 +233,19 @@
     }
   }
 }
+
+
+@media(max-width: 992px) {
+  .b-img {
+    img {
+      display: none;
+    }
+  }
+  .testi-data {
+    flex-direction: column;
+  }
+  .testi-model {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}
