@@ -19,11 +19,17 @@ export class BannerComponent implements OnInit {
       0: {
         items: 3,
       },
+      1000: {
+        items: 1,
+      },
+      800: {
+        items: 2
+      },
       600: {
         items: 1,
       },
-      1000: {
-        items: 1,
+      300:{
+        items: 1
       }
     },
     nav: false

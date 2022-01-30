@@ -2,9 +2,42 @@
 @import url("~bootstrap/dist/css/bootstrap.min.css");
 @import url("~bootstrap-icons/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap");
+@import '~bootstrap/scss/bootstrap';
 @import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import url("~@fortawesome/fontawesome-free/css/all.css");
+
+.navbar-expand {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        .sidenav {
+          position: absolute;
+          top: 100%;
+          height: calc(100vh - 100%) !important;
+          width: 100%;
+          left: 0%;
+          transition: left 0.35s;
+          padding: 2rem;
+          background-color: inherit;
+          background-color: #fff;
+        }
+
+        .sidenav:not(.show) {
+          left: -100%;
+        }
+      }
+    }
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url(./assets/images/hamburger.svg);
+}
+
 ul {
   list-style: outside none none;
   margin: 0;
@@ -153,5 +186,14 @@ a {
               }
           }
       }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .header-block {
+    .top-nav {
+      display: none;
+    }
   }
 }

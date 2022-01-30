@@ -109,3 +109,23 @@
         }
     }
 }
+@media only screen and (max-width: 415px) {
+    .about-img {
+        margin-top: 75px !important;
+    }
+    .breadcrumbs-inner{
+        padding-top: 20px !important;
+        padding-bottom: 10px !important;
+        h1{
+            font-size: 30px !important;
+            margin-bottom: 0 !important;
+            line-height: 30px !important;
+        }
+    }
+    .ab-img{
+        top: -20px !important;
+    }
+    .wrapper{
+        margin-top: 20px !important;
+    }
+  }

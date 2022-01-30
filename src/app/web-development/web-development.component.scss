@@ -268,3 +268,23 @@
     color: #fff;
     margin: 0px;
 }
+
+
+@media(max-width: 575px) {
+  .resp-text, .resp-list, .service-list {
+    padding:0 15px;
+  }
+}
+
+@media(max-width:450px) {
+  .getintouch {
+    text-align: center;
+  }
+  .epx-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  .brouchers {
+    text-align: center;
+  }
+}

@@ -11,7 +11,11 @@ export class HeaderComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   checkScroll() {
-    this.isSticky = window.pageYOffset >= 150;
+    if (window.innerWidth < 658) {
+      this.isSticky = true;
+    } else {
+      this.isSticky = window.pageYOffset >= 150;
+    }
   }
 
   constructor(
@@ -19,6 +23,9 @@ export class HeaderComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
+    if (window.innerWidth < 658) {
+      this.isSticky = true;
+    }
   }
 
 }

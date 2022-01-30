@@ -242,7 +242,7 @@
   background-color: #fdfdfd;
   border-radius: 5px 5px 5px 5px;
   .desc-block {
-    background: #F6F7F9;
+    background: #f6f7f9;
     padding: 30px 40px 30px 43px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: -2px 16px 44px -32px rgb(0 0 0 / 0%);
@@ -252,7 +252,7 @@
       font-size: 17px;
       line-height: 33px;
       font-weight: 400;
-      .desc{
+      .desc {
         margin-top: 30px;
       }
       .quote {
@@ -260,8 +260,8 @@
         height: 90px;
         border-radius: 50px 50px 50px 50px;
       }
-      .c-title{
-        p{
+      .c-title {
+        p {
           color: #0a0a0a;
           font-size: 22px;
           font-weight: 600;
@@ -269,8 +269,8 @@
           margin-bottom: 0px !important;
           margin-left: 25px;
           margin-top: 10px;
-          &.sub{
-            color:#878787;
+          &.sub {
+            color: #878787;
             font-size: 14px;
             margin-bottom: 0 !important;
             margin-top: 0 !important;
@@ -317,22 +317,36 @@
     height: auto;
   }
 }
-.services{
-  background-color: #F6F7F9;
+.services {
+  background-color: #f6f7f9;
   padding-top: 60px;
   padding-bottom: 120px;
   position: relative;
-  .title{
+  .title {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.4;
     color: #0a0a0a;
     margin: 0 auto;
   }
-  .ab-services{
+  .ab-services {
     box-shadow: unset !important;
     padding: 0 !important;
     padding-top: 20px !important;
-    
+  }
+}
+
+@media (max-width: 992px) {
+  .b-img {
+    img {
+      display: none;
+    }
+  }
+  .testi-data {
+    flex-direction: column;
+  }
+  .testi-model {
+    width: 100%;
+    margin-bottom: 60px;
   }
 }
