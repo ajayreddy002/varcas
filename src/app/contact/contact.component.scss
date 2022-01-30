@@ -1,0 +1,154 @@
+.bread-crumb {
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    &.contact-img {
+        background: url("/assets/images/contact-bg.jpeg");
+        background-position: center top;
+    }
+    .breadcrumbs-inner {
+        padding: 140px 0 150px;
+        h1 {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 56px;
+            margin-bottom: 5px;
+            color: #fff;
+        }
+        ul {
+            li {
+                color: #fff;
+                display: inline-block;
+                font-size: 14px;
+                font-weight: 400;
+                a {
+                    position: relative;
+                    padding-right: 22px;
+                    -webkit-transition: 0.3s;
+                    transition: 0.3s;
+                    color: #fff;
+                    text-decoration: none;
+                    &:before {
+                        background-color: #fff;
+                        content: "";
+                        height: 15px;
+                        width: 1px;
+                        position: absolute;
+                        right: 9px;
+                        top: 2px;
+                        transform: rotate(26deg);
+                    }
+                }
+            }
+        }
+    }
+    .contact-block {
+        padding: 100px 0;
+        .c-box {
+            background-image: linear-gradient(250deg, #4eedcf 0%, #03228f 100%);
+            padding: 80px 30px 80px 30px;
+            border-radius: 5px 5px 5px 5px;
+            .c-title-block {
+                .sub {
+                    display: inline-block;
+                    line-height: 28px;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding-left: 0;
+                    margin-bottom: 7px;
+                    color: #ffffff;
+                }
+                h2 {
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 46px;
+                    color: #ffffff;
+                    margin: 0;
+                }
+            }
+            .address-block {
+                .ad-icon {
+                    background-image: linear-gradient(275deg, #ffffff 0%, #fcfcff 100%);
+                    min-width: 48px;
+                    height: 48px;
+                    line-height: 48px;
+                    text-align: center;
+                    width: 40px;
+                    border-radius: 50%;
+                    margin-right: 23px;
+                }
+                .ad-text {
+                    .label {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: #ffffff;
+                        display: block;
+                        margin-bottom: 5px;
+                    }
+                    a {
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+        .contact-form {
+            &.pl-70 {
+                padding-left: 70px !important;
+            }
+            .cf-text {
+                span {
+                    margin: 0 0 10px;
+                    display: block;
+                    line-height: 28px;
+                    font-family: "Livvic", sans-serif;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    color: #1273eb;
+                }
+                h2 {
+                    font-size: 36px;
+                    font-weight: 700;
+                    line-height: 1.4;
+                    color: #0a0a0a;
+                    margin: 0 auto;
+                }
+            }
+            fieldset {
+                min-width: 0;
+                padding: 0;
+                margin: 0;
+                border: 0;
+                textarea {
+                    height: 120px;
+                }
+                .form-control {
+                    padding: 20px 20px 20px 20px;
+                    border-radius: 5px 5px 5px 5px;
+                    border-style: solid;
+                    border-width: 0px 0px 0px 0px;
+                    background-color: #f6f7f9;
+                    width: 100%;
+                    max-width: 100%;
+                }
+                .btn-block {
+                    button {
+                        background-image: linear-gradient(250deg, #4eedcf 0%, #03228f 100%);
+                        padding: 16px 40px 16px 40px;
+                        font-weight: 500;
+                        font-size: 16px;
+                        border-radius: 30px 30px 30px 30px;
+                        color: #ffffff;
+                        background-color: transparent;
+                        border: none;
+                        outline: none;
+                        &:focus{
+                            outline: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

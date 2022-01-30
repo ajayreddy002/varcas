@@ -2,7 +2,9 @@
 @import url("~bootstrap/dist/css/bootstrap.min.css");
 @import url("~bootstrap-icons/font/bootstrap-icons.css");
 @import url("https://fonts.googleapis.com/css2?family=Livvic:wght@300;400;500;600;700&display=swap");
-
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import "node_modules/ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import url("~@fortawesome/fontawesome-free/css/all.css");
 ul {
   list-style: outside none none;
   margin: 0;
@@ -53,4 +55,103 @@ a {
   font-size: 18px;
   font-weight: 400;
   margin: 0;
+}
+.sub-title {
+  margin: 0 0 10px;
+  display: block;
+  line-height: 28px;
+  font-family: "Livvic", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #03228f;
+  text-transform: uppercase;
+}
+.ab-services {
+  padding: 50px 28px 50px 28px;
+  border-radius: 10px 10px 10px 10px;
+  // box-shadow: 0 0 50px 11px rgba(92, 138, 245, 0.05);
+  position: relative;
+  text-align: left;
+  .service-item {
+      padding: 50px 36px 50px 36px;
+      background-color: #fff;
+      border-radius: 10px 10px 10px 10px;
+      box-shadow: 0 0 50px 11px rgb(95 138 236 / 5%);
+      position: relative;
+      text-align: left;
+      &:hover {
+          background-color: #fd660a;
+          .m-img {
+              transform: scale(0);
+          }
+          .h-img {
+              visibility: visible !important;
+              opacity: 1 !important;
+              transform: scale(1) !important;
+          }
+          .s-content .s-title {
+              h3 a {
+                  color: #fff;
+              }
+          }
+          .description {
+              color: #fff;
+          }
+          &.b-bg{
+              background: #14d2f5 !important;
+          }
+          &.y-bg{
+              background: #f5be18 !important;
+          }
+          &.db-bg{
+              background: #2c44e4 !important;
+          }
+          &.p-bg{
+            background: #F30876 !important;
+          }
+          &.g-bg{
+            background: #13E1AF !important;
+          }
+          &.s-bg{
+            background: #0A99FD !important;
+          }
+      }
+      .s-icon {
+          position: relative;
+          transition: all 0.3s ease;
+          .s-img-block {
+              .m-img {
+                  height: 70px;
+                  width: 70px;
+              }
+              .h-img {
+                  height: 70px;
+                  width: 70px;
+                  position: absolute;
+                  left: 0;
+                  top: 0;
+                  visibility: hidden;
+                  opacity: 0;
+                  transform: scale(0);
+                  transition: all 0.3s ease;
+              }
+          }
+      }
+      .s-content {
+          padding: 33px 0 0 0;
+          position: relative;
+          .s-title {
+              h3 {
+                  font-size: 20px;
+                  font-weight: 600;
+                  line-height: 30px;
+                  margin-bottom: 13px;
+                  a {
+                      color: #1c1b1b;
+                      text-decoration: none;
+                  }
+              }
+          }
+      }
+  }
 }

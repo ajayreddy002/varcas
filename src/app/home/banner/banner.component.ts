@@ -9,27 +9,24 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 export class BannerComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
-    mouseDrag: false,
-    touchDrag: false,
-    pullDrag: false,
-    dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
+    autoplay: false,
+    center: true,
+    dots: true,
+    autoWidth: false,
+    margin: 30,
+    items: 3,
     responsive: {
       0: {
-        items: 1
+        items: 3,
       },
-      400: {
-        items: 2
+      600: {
+        items: 1,
       },
-      740: {
-        items: 3
-      },
-      940: {
-        items: 4
+      1000: {
+        items: 1,
       }
     },
-    nav: true
+    nav: false
   }
 
   testiData = [
@@ -40,15 +37,15 @@ export class BannerComponent implements OnInit {
     },
     {
       id: '02',
-      img: 'quote.png',
+      img: 'about.jpeg',
       text: 'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.'
     },
     {
       id: '03',
-      img: 'quote.png',
+      img: 'add-bg.jpeg',
       text: 'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.'
     },
-    
+
   ]
 
   // slides = [
