@@ -129,3 +129,21 @@
         margin-top: 20px !important;
     }
   }
+  .services {
+    background-color: #f6f7f9;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    position: relative;
+    .title {
+      font-size: 36px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #0a0a0a;
+      margin: 0 auto;
+    }
+    .ab-services {
+      box-shadow: unset !important;
+      padding: 0 !important;
+      padding-top: 20px !important;
+    }
+  }

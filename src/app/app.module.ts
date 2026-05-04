@@ -14,6 +14,13 @@ import { BannerComponent } from './home/banner/banner.component';
 import { HomeAboutComponent } from './home/home-about/home-about.component';
 import { WebDevelopmentComponent } from './web-development/web-development.component';
 import { ContactComponent } from './contact/contact.component';
+import { StaffingComponent } from './staffing/staffing.component';
+import { SoftwareDevComponent } from './software-dev/software-dev.component';
+import { AngularTrainigComponent } from './angular-trainig/angular-trainig.component';
+import { HtmlTrainigComponent } from './html-trainig/html-trainig.component';
+import { CssTrainigComponent } from './css-trainig/css-trainig.component';
+import { ReactTrainigComponent } from './react-trainig/react-trainig.component';
+import { NodejsTrainigComponent } from './nodejs-trainig/nodejs-trainig.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,14 @@ import { ContactComponent } from './contact/contact.component';
     BannerComponent,
     HomeAboutComponent,
     WebDevelopmentComponent,
-    ContactComponent
+    ContactComponent,
+    StaffingComponent,
+    SoftwareDevComponent,
+    AngularTrainigComponent,
+    HtmlTrainigComponent,
+    CssTrainigComponent,
+    ReactTrainigComponent,
+    NodejsTrainigComponent
   ],
   imports: [
     BrowserModule,
